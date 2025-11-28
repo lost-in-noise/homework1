@@ -18,18 +18,39 @@ public class Main {
 //      3. for -ით დაბეჭდეთ მასივში არსებულ ყოველი ელემენტი, გარდა მეხუთე პოზიციაზე მდგომისა - 2 ქულა
         String[] arr = {"Irma", "Vera", "Gvantsa", "Nunu", "Lola", "Irakli", "Nancy"};
         for (int j = 0; j < arr.length; j++) {
-            if (j == 5) {
-                j++;
+            if (j == 4) {  // "მეხუთე პოზიციაში" მეხუთე ელემენტს თუ გილისხმობდი მასივში ანუ მეოთხე ინდექსს, მაშინ j == 4;
+//                თუ გულისმობდი ინდექს 5-ს, მაშინ j == 5;
+                continue;
             }
             System.out.println(arr[j]);
         }
 
 
 //      4. შემოიტანე ნებისმიერი სტრინგი და for -ით დათვალე ამ სტრინგში რამდენი ხმოვანი არის - 2 ქულა
-        String lastName = "Kikvadze";
+        String lastName = "კიკვაძე";
+        String vowels = "აეიოუ";
+
+        int countVowels = 0;
+        for (int k = 0; k < lastName.length(); k++) {
+            char ch = lastName.charAt(k);
+            if (vowels.indexOf(ch) != -1) {
+                countVowels++;
+            }
+        }
+        System.out.println("სულ ხმოვნების რაოდენობაა: " + countVowels);
 
 
 //      5. შემოიტანე ნებისმიერი სტრინგი და while -ით დათვალე ამ სტრინგში რამდენი თანხმოვანი არის - 2 ქულა
+        int index = 0;
+        int countConsonant = 0;
+        while (index < lastName.length()) {
+            char charConsonant = lastName.charAt(index);
+            if (vowels.indexOf(charConsonant) == -1) {
+                countConsonant++;
+            }
+            index++;
+        }
+        System.out.println("სულ თანხმოვნების რაოდენობაა: " + countConsonant);
 
 
     }
