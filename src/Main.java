@@ -16,8 +16,18 @@ public class Main {
         System.out.println(textLength);
 
 //      3. for -ით დაბეჭდეთ მასივში არსებულ ყოველი ელემენტი, გარდა მეხუთე პოზიციაზე მდგომისა - 2 ქულა
+        String[] arr = {"Irma", "Vera", "Gvantsa", "Nunu", "Lola", "Irakli", "Nancy"};
+        for (int j = 0; j < arr.length; j++) {
+            while (j == 5) {
+                j++;
+            }
+            System.out.println(arr[j]);
+        }
+
 
 //      4. შემოიტანე ნებისმიერი სტრინგი და for -ით დათვალე ამ სტრინგში რამდენი ხმოვანი არის - 2 ქულა
+        String lastName = "Kikvadze";
+
 
 //      5. შემოიტანე ნებისმიერი სტრინგი და while -ით დათვალე ამ სტრინგში რამდენი თანხმოვანი არის - 2 ქულა
 
