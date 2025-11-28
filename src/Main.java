@@ -18,7 +18,7 @@ public class Main {
 //      3. for -ით დაბეჭდეთ მასივში არსებულ ყოველი ელემენტი, გარდა მეხუთე პოზიციაზე მდგომისა - 2 ქულა
         String[] arr = {"Irma", "Vera", "Gvantsa", "Nunu", "Lola", "Irakli", "Nancy"};
         for (int j = 0; j < arr.length; j++) {
-            while (j == 5) {
+            if (j == 5) {
                 j++;
             }
             System.out.println(arr[j]);
