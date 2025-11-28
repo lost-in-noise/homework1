@@ -16,7 +16,7 @@ public class Main {
         System.out.println(textLength);
 
 //      3. for -ით დაბეჭდეთ მასივში არსებულ ყოველი ელემენტი, გარდა მეხუთე პოზიციაზე მდგომისა - 2 ქულა
-        String[] arr = {"Irma", "Vera", "Gvantsa", "Nunu", "Lola", "Irakli", "Nancy"};
+        String[] arr = {"Nino", "Mariam", "Anna", "Zura", "Giorgi", "Levan", "Davit", "Simba"};
         for (int j = 0; j < arr.length; j++) {
             if (j == 4) {  // "მეხუთე პოზიციაში" მეხუთე ელემენტს თუ გილისხმობდი მასივში ანუ მეოთხე ინდექსს, მაშინ j == 4;
 //                თუ გულისმობდი ინდექს 5-ს, მაშინ j == 5;
