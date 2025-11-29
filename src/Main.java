@@ -44,8 +44,8 @@ public class Main {
         int index = 0;
         int countConsonant = 0;
         while (index < lastName.length()) {
-            char charConsonant = lastName.charAt(index);
-            if (vowels.indexOf(charConsonant) == -1) {
+            char charC = lastName.charAt(index);
+            if (vowels.indexOf(charC) == -1) {
                 countConsonant++;
             }
             index++;
